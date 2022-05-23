@@ -114,13 +114,14 @@ export default function CardBox({
 
   const setStateMinus = (e) => {
     let check = state.some((elem) => elem.id === e.id);
-    if (e.quantity >= 0) {
-      setTotal(total - e.price);
-      setTotalQuantity(totalQuantity - 1);
-    }
+    let haveInState = state.filter((elem) => elem.id === e.id);
 
     switch (e.name) {
       case "Bakery Zhitny":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadZhitniy > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);
@@ -146,6 +147,10 @@ export default function CardBox({
         return e;
 
       case "Bakery Poloninsky":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadPoloninskiy > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);
@@ -171,6 +176,10 @@ export default function CardBox({
         return e;
 
       case "Bakery Black":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadBlack > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);
@@ -195,6 +204,10 @@ export default function CardBox({
         return e;
 
       case "Bakery Home":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadHome > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);
@@ -219,6 +232,10 @@ export default function CardBox({
         return e;
 
       case "Bakery Artizansky":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadArtizansky > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);
@@ -243,6 +260,10 @@ export default function CardBox({
         return e;
 
       case "Bakery Derevensky":
+        if (check) {
+          setTotal(total - e.price);
+          setTotalQuantity(totalQuantity - 1);
+        }
         if (breadDerevensky > 1) {
           if (check) {
             const newState = state.filter((elem) => elem.id !== e.id);

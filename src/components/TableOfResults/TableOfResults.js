@@ -18,7 +18,7 @@ export default function TableOfResults({
     <div>
       {state && (
         <TableContainer component={Paper} sx={{ marginTop: "17px" }}>
-          <Table sx={{ width: 300 }} aria-label="simple table">
+          <Table sx={{ width: 400 }} aria-label="simple table">
             <TableHead>
               <TableRow>
                 {/* <TableCell>Dessert (100g serving)</TableCell> */}
