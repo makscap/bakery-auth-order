@@ -114,7 +114,6 @@ export default function CardBox({
 
   const setStateMinus = (e) => {
     let check = state.some((elem) => elem.id === e.id);
-    let haveInState = state.filter((elem) => elem.id === e.id);
 
     switch (e.name) {
       case "Bakery Zhitny":
